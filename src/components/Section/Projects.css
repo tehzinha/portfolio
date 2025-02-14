@@ -1,0 +1,120 @@
+.projects-container {
+  text-align: center;
+   max-width: 1200px; /* Aumentado um pouco */
+  margin: 0 auto;
+  margin-left: 95px;
+}
+
+.projects-container h1 {
+  font-size: 36px; /* Aumentado um pouco */
+  color: #6a0dad;
+}
+
+.projects-warning {
+  font-size: 18px;
+  color: #ffcc00;
+  margin-bottom: 25px; /* Aumentado para mais espaçamento */
+}
+
+.projects-scroll {
+  display: flex;
+  gap: 25px; /* Maior espaçamento entre os vídeos */
+  overflow-x: auto;
+  padding-bottom: 15px;
+  scroll-behavior: smooth;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  width: 340px; /* Aumentado um pouco */
+  background: #222;
+  padding: 20px; /* Mais espaçamento interno */
+  border-radius: 12px; /* Bordas mais suaves */
+  text-align: center;
+}
+
+/* Container do vídeo */
+.video-containerr {
+  position: relative;
+  width: 100%;
+}
+
+/* Configuração do vídeo */
+.project-video {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Ícone de play */
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.play-icon:hover {
+  color: #ffcc00;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Ocultar o ícone quando o vídeo for reproduzido */
+.video-containerr.playing .play-icon {
+  display: none;
+}
+
+
+.project-info {
+  margin-top: 15px; /* Maior espaçamento */
+}
+
+.project-info h2 {
+  font-size: 22px; /* Aumentado um pouco */
+  color: #6a0dad;
+}
+
+.project-info p {
+  font-size: 16px; /* Aumentado um pouco */
+  color: #d6d0d0;
+}
+
+.project-info a {
+  display: block;
+  margin-top: 12px;
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; /* Aumentado um pouco */
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .projects-scroll {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 95%; /* Maior aproveitamento da tela */
+  }
+
+  .project-video {
+    height: 250px; /* Ajustado para telas menores */
+  }
+}

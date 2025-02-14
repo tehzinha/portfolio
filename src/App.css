@@ -1,0 +1,63 @@
+/* Estilos para o layout geral */
+*{
+  font-family: 'Smooch Sans', sans-serif;
+}
+
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o root ocupe toda a altura da viewport */
+}
+
+
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Garante que o conteúdo ocupe toda a altura da página */
+    font-family: 'Smooch Sans', sans-serif;
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura total da viewport */
+}
+
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+  display: flex;
+  flex-direction: column;
+}
+/* Estilos Globais */
+section {
+  padding: 2rem 1rem;
+  min-height: calc(100vh - 100px); /* Ajusta a altura considerando o header e o footer */
+}
+
+#about {
+  background: #131212;
+}
+
+#projects {
+  background: #080808;
+}
+
+  

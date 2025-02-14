@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Meu Portfólio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Smooch Sans', sans-serif;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .logo img {
+      height: 220px;  /* Tamanho da logo */
+    }
+    .navbar {
+      display: flex;
+      gap: 5rem;  /* Maior espaçamento entre os links */
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .navbar a:hover {
+      color: #6a0dad;
+    }
+    .cta-button a {
+      background-color: #6a0dad;
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .cta-button a:hover {
+      background-color: #510985;
+    }
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+    #about {
+      background: #464545;
+    }
+    #projects {
+      background: #202020;
+    }
+    #contact {
+      background: #000000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Root div, onde o React irá injetar o conteúdo -->
+  <div id="root"></div> <!-- Certifique-se de ter isso aqui para o React funcionar -->
+</body>
+</html>

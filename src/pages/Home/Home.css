@@ -1,0 +1,61 @@
+/* Ajustes no contêiner do vídeo */
+.home-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+.video-container {
+    width: 100%; /* O contêiner ocupa 100% da largura da tela */
+    height: 100vh; /* O contêiner ocupa 100% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Fundo preto para destacar o vídeo */
+    overflow: hidden; /* Garante que nada saia do contêiner */
+  }
+  
+  .welcome-video {
+    width: 100vw; /* O vídeo ocupa 100% da largura da tela */
+    height: 100vh; /* O vídeo ocupa 100% da altura da tela */
+    object-fit: cover; /* Garante que o vídeo cubra todo o contêiner sem distorcer */
+    object-position: center; /* Centraliza o vídeo no contêiner */
+    border-radius: 10px; /* Borda arredondada opcional */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Efeito de sombra */
+  }
+  
+  
+ .section {
+  /*padding: 80px 20px;  Espaço para as seções */
+  text-align: center;
+  min-height: 100vh; /* Cada seção ocupa uma tela inteira */
+}
+
+#about {
+  background-color: #272626;
+}
+
+#projects {
+  background-color: #161515;
+}
+
+#contact {
+  background-color: #000000;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo do título das seções */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Texto das seções */
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}

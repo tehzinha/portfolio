@@ -1,0 +1,20 @@
+/* Exemplo de animação */
+.header {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header:hover {
+    transform: scale(1.05);
+  }
+  
+  .main-content {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  

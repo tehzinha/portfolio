@@ -1,0 +1,75 @@
+.about-video {
+  width: 100%;  
+  max-width: 700px; /* Aumenta um pouco o tamanho do vídeo */
+  height: auto;
+  object-fit: cover;
+  margin-left: -120px; /* Afasta 100% da margem direita */
+}
+
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about-photo {
+  width: 20%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-left: 80px;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text h1 {
+  font-size: 28px;
+  color: #6a0dad;
+  margin-right: 0px;
+}
+
+.about-text p {
+  color: #d6d0d0;
+  margin-right: 0px;
+}
+
+/* Zig-Zag Effect */
+.left {
+  flex-direction: row; /* Foto à esquerda, texto à direita */
+}
+/* Estilo específico para o vídeo da esquerda */
+.left .about-video {
+  margin-left: -120px; /* Mantém o vídeo encostado na lateral esquerda */
+}
+
+/* Estilo específico para o vídeo da direita */
+.right .about-video {
+  margin-left: 0; /* Remove qualquer margem negativa que esteja empurrando o vídeo */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo, 
+  .about-video,
+  .about-text {
+    width: 100%;
+    margin: 0; /* Remove margens que podem atrapalhar no mobile */
+  }
+}
