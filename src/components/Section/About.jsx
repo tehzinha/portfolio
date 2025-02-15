@@ -22,11 +22,11 @@ const About = () => {
           <div className="about-text">
             <h1>Sobre Mim</h1>
             <p>
-              Olá! Eu sou a Ester, nascida em 2007 e apaixonada por inovação, tecnologia e programação. Desde que entrei nesse universo, descobri um caminho que une criatividade e lógica, e hoje estou determinada a construir minha trajetória como desenvolvedora.
+            Olá! Meu nome é Ester, nascida em 2007, e sou apaixonada por inovação, tecnologia e desenvolvimento de software. Desde que entrei nesse universo, descobri uma conexão única entre criatividade e lógica, e sigo determinada a construir minha trajetória como desenvolvedora.
               <br /><br />
-              Adoro desafios e aprender coisas novas, sempre buscando evoluir e transformar ideias em soluções eficientes. Além do código, uma das minhas maiores marcas é a alegria—acredito que rir torna qualquer jornada mais leve e inspiradora.
+              Gosto de desafios e estou sempre em busca de aprendizado, aprimorando minhas habilidades para transformar ideias em soluções eficientes. Além da tecnologia, acredito que um ambiente positivo e colaborativo torna qualquer jornada mais produtiva e inspiradora.
               <br /><br />
-              Estou em constante crescimento e pronta para explorar as infinitas possibilidades da tecnologia 🚀
+              Estou em constante evolução e pronta para explorar novas possibilidades no mundo da tecnologia. 🚀
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ const About = () => {
           <div className="about-text">
             <h1>O que eu faço?</h1>
             <p>
-              Me formei em 2024 no ensino médio e no curso técnico de desenvolvimento de sistemas. Em meu TCC fiz, juntamente com meu grupo, uma plataforma que ajuda estudantes a estudarem. Utilizamos API, Banco de Dados, React, HTML, CSS, Node e Flutter. Foi uma experiência incrível que ampliou minha visão sobre desenvolvimento e trabalho em equipe.
+            Concluí o ensino médio e o curso técnico em Desenvolvimento de Sistemas em 2024. No meu Trabalho de Conclusão de Curso (TCC), desenvolvi, junto com meu grupo, uma plataforma voltada para auxiliar estudantes na preparação para o Enem e outros vestibulares. O projeto incluiu videoaulas, conteúdos filtrados, listas de exercícios com gabarito e um chatbot automatizado para responder dúvidas gerais. Utilizamos tecnologias como API, Banco de Dados, React, HTML, CSS, Node e Flutter. Essa experiência ampliou minha visão sobre desenvolvimento de software e reforçou minha capacidade de trabalho em equipe.
             </p>
           </div>
           <video 
@@ -62,7 +62,7 @@ const About = () => {
           <div className="about-text">
             <h1>Outros Interesses</h1>
             <p>
-              Além da programação, gosto de ler, escrever, escutar música, aprender idiomas e tocar meu instrumento. Acredito que explorar diferentes áreas me ajuda a ter novas ideias e aplicar criatividade nos meus projetos.
+            Além da programação, tenho interesse em leitura e escrita, e atualmente estou trabalhando em um livro de romance e crítica, com planos de publicação. Também sou apaixonada por música e estudo órgão desde os cinco anos, o que considero uma prática terapêutica. Além disso, gosto de patinar e aprender novos idiomas—durante a pandemia, estudei mandarim. Tenho conhecimento em Libras, pois meu pai é deficiente auditivo. Acredito que explorar diferentes áreas amplia minha criatividade e enriquece meus projetos.
             </p>
           </div>
         </div>
