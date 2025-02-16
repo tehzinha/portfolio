@@ -11,7 +11,7 @@ function App() {
       <Header /> {/* Componente Header sendo usado */}
       <div className="main-content">
         <Routes>
-          <Route path="/portfolio/" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
       <Footer/>
