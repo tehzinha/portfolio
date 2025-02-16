@@ -15,8 +15,10 @@
   }
   
   .welcome-video {
-    width: 100vw; /* O vídeo ocupa 100% da largura da tela */
-    height: 100vh; /* O vídeo ocupa 100% da altura da tela */
+    width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
     object-fit: cover; /* Garante que o vídeo cubra todo o contêiner sem distorcer */
     object-position: center; /* Centraliza o vídeo no contêiner */
     border-radius: 10px; /* Borda arredondada opcional */
@@ -215,4 +217,9 @@ p {
     padding: 8px;
   }
 }
-
+/* Responsividade para video */
+@media (max-width: 768px) {
+  .welcome-video {
+    width: 100%;
+  }
+}

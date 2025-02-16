@@ -208,5 +208,18 @@
     padding: 8px;
   }
 }
+/* Em dispositivos menores, o menu vira um bloco */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
 
 

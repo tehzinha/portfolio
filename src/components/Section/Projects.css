@@ -1,21 +1,53 @@
+/* Estilos para o container de projetos */
 .projects-container {
   text-align: center;
-   max-width: 1200px; /* Aumentado um pouco */
+  max-width: 1200px; /* Aumentado um pouco */
   margin: 0 auto;
   margin-left: 95px;
 }
 
+/* Seção de Projetos - Vídeos lado a lado */
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Estilos para os vídeos da seção Projects */
+.projects-section video {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .projects-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-section video {
+    max-width: 90%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Estilos para o título da seção de projetos */
 .projects-container h1 {
   font-size: 36px; /* Aumentado um pouco */
   color: #6a0dad;
 }
 
+/* Estilos para o aviso na seção de projetos */
 .projects-warning {
   font-size: 18px;
   color: #ffcc00;
   margin-bottom: 25px; /* Aumentado para mais espaçamento */
 }
 
+/* Estilos para a rolagem horizontal dos projetos */
 .projects-scroll {
   display: flex;
   gap: 25px; /* Maior espaçamento entre os vídeos */
@@ -24,6 +56,7 @@
   scroll-behavior: smooth;
 }
 
+/* Estilos para os cards dos projetos */
 .project-card {
   flex: 0 0 auto;
   width: 340px; /* Aumentado um pouco */
@@ -39,14 +72,14 @@
   width: 100%;
 }
 
-/* Configuração do vídeo */
+/* Estilo do vídeo do projeto */
 .project-video {
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
 }
 
-/* Ícone de play */
+/* Ícone de play no vídeo */
 .play-icon {
   position: absolute;
   top: 50%;
@@ -70,12 +103,12 @@
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* Ocultar o ícone quando o vídeo for reproduzido */
+/* Ocultar o ícone de play quando o vídeo estiver sendo reproduzido */
 .video-containerr.playing .play-icon {
   display: none;
 }
 
-
+/* Estilos para a informação do projeto */
 .project-info {
   margin-top: 15px; /* Maior espaçamento */
 }
@@ -135,7 +168,7 @@
   }
 
   .about-photo, .about-text {
-    width: 100%; /* Garante que os itens ocuparam 100% da largura */
+    width: 100%; /* Garante que os itens ocupam 100% da largura */
   }
 
   .project-card {
@@ -259,4 +292,3 @@
     padding: 8px;
   }
 }
-
