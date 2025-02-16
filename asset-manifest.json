@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.11096bd7.css",
+    "main.js": "/portfolio/static/js/main.b1d83318.js",
+    "static/media/logo.png": "/portfolio/static/media/logo.f9afa3cb883995bcaaa2.png",
+    "static/media/eu.jpeg": "/portfolio/static/media/eu.d002d0ece09991a70658.jpeg",
+    "index.html": "/portfolio/index.html",
+    "static/media/Formatura.mp4": "/portfolio/static/media/Formatura.d0207bc4f2b6d11ca388.mp4",
+    "static/media/Game1.mp4": "/portfolio/static/media/Game1.a6a4693340cd9a7234e0.mp4",
+    "static/media/Hobbie.mp4": "/portfolio/static/media/Hobbie.7f496bdddb7aa7d0804c.mp4",
+    "static/media/QuemEuSou.mp4": "/portfolio/static/media/QuemEuSou.33990869e5f0f3c052fa.mp4",
+    "static/media/Game2.mp4": "/portfolio/static/media/Game2.52cce0a4467cadeaf98e.mp4",
+    "static/media/Romance.mp4": "/portfolio/static/media/Romance.b54abaa9ae3f38053f0e.mp4",
+    "static/media/bemVindo.mp4": "/portfolio/static/media/bemVindo.fe19f41a66d5314982cf.mp4",
+    "main.11096bd7.css.map": "/portfolio/static/css/main.11096bd7.css.map",
+    "main.b1d83318.js.map": "/portfolio/static/js/main.b1d83318.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11096bd7.css",
+    "static/js/main.b1d83318.js"
+  ]
+}
