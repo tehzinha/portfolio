@@ -1,41 +1,24 @@
-/* Seção Projects */
 .projects-container {
   text-align: center;
-  max-width: 1200px;
+   max-width: 1200px; /* Aumentado um pouco */
   margin: 0 auto;
-}
-
-.projects-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem; /* Aumentei o espaço entre os vídeos */
-  justify-content: center;
-  padding: 40px 20px;
-}
-
-.projects-section video {
-  width: 100%;
-  max-width: 400px; /* Aumentado para dar mais destaque ao vídeo */
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-left: 95px;
 }
 
 .projects-container h1 {
-  font-size: 36px;
+  font-size: 36px; /* Aumentado um pouco */
   color: #6a0dad;
-  margin-bottom: 30px;
 }
 
 .projects-warning {
   font-size: 18px;
   color: #ffcc00;
-  margin-bottom: 25px;
+  margin-bottom: 25px; /* Aumentado para mais espaçamento */
 }
 
 .projects-scroll {
   display: flex;
-  gap: 25px;
+  gap: 25px; /* Maior espaçamento entre os vídeos */
   overflow-x: auto;
   padding-bottom: 15px;
   scroll-behavior: smooth;
@@ -43,135 +26,95 @@
 
 .project-card {
   flex: 0 0 auto;
-  width: 340px;
+  width: 340px; /* Aumentado um pouco */
   background: #222;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 20px; /* Mais espaçamento interno */
+  border-radius: 12px; /* Bordas mais suaves */
   text-align: center;
 }
 
-.project-info h2 {
-  font-size: 22px;
-  color: #6a0dad;
-}
-
-.project-info p {
-  font-size: 16px;
-  color: #d6d0d0;
-}
-
-.project-info a {
-  color: #ffcc00;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.project-info a:hover {
-  text-decoration: underline;
-}
-
-/* Seção Projects */
-.projects-container {
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.projects-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem; /* Aumentei o espaço entre os vídeos */
-  justify-content: center;
-  padding: 40px 20px;
-}
-
-.projects-section video {
+/* Container do vídeo */
+.video-containerr {
+  position: relative;
   width: 100%;
-  max-width: 400px; /* Aumentado para dar mais destaque ao vídeo */
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.projects-container h1 {
-  font-size: 36px;
-  color: #6a0dad;
-  margin-bottom: 30px;
+/* Configuração do vídeo */
+.project-video {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.projects-warning {
-  font-size: 18px;
-  color: #ffcc00;
-  margin-bottom: 25px;
-}
-
-.projects-scroll {
+/* Ícone de play */
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
   display: flex;
-  gap: 25px;
-  overflow-x: auto;
-  padding-bottom: 15px;
-  scroll-behavior: smooth;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.project-card {
-  flex: 0 0 auto;
-  width: 340px;
-  background: #222;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
+.play-icon:hover {
+  color: #ffcc00;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Ocultar o ícone quando o vídeo for reproduzido */
+.video-containerr.playing .play-icon {
+  display: none;
+}
+
+
+.project-info {
+  margin-top: 15px; /* Maior espaçamento */
 }
 
 .project-info h2 {
-  font-size: 22px;
+  font-size: 22px; /* Aumentado um pouco */
   color: #6a0dad;
 }
 
 .project-info p {
-  font-size: 16px;
+  font-size: 16px; /* Aumentado um pouco */
   color: #d6d0d0;
 }
 
 .project-info a {
+  display: block;
+  margin-top: 12px;
   color: #ffcc00;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 16px; /* Aumentado um pouco */
 }
 
 .project-info a:hover {
   text-decoration: underline;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 1024px) {
-  .projects-section {
+/* Responsividade */
+@media (max-width: 768px) {
+  .projects-scroll {
     flex-direction: column;
     align-items: center;
   }
 
-  .projects-section video {
-    max-width: 90%;
-    margin-bottom: 1rem;
-  }
-
   .project-card {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .projects-container h1 {
-    font-size: 28px;
+    width: 95%; /* Maior aproveitamento da tela */
   }
 
-  .projects-scroll {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .project-card {
-    width: 100%;
+  .project-video {
+    height: 250px; /* Ajustado para telas menores */
   }
 }

@@ -1,138 +1,75 @@
-/* Estilos para o container da seção About */
+.about-video {
+  width: 100%;  
+  max-width: 700px; /* Aumenta um pouco o tamanho do vídeo */
+  height: auto;
+  object-fit: cover;
+  margin-left: -120px; /* Afasta 100% da margem direita */
+}
+
+
 .about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-section {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 100px;
-  background-color: #464545;
+  gap: 30px;
 }
 
-/* Estilo da imagem na seção About */
 .about-photo {
-  width: 45%;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-left: 80px;
 }
 
-/* Estilo do texto na seção About */
 .about-text {
   width: 50%;
 }
 
-/* Título da seção About */
 .about-text h1 {
-  font-size: 36px; /* Aumentado um pouco */
+  font-size: 28px;
   color: #6a0dad;
-  margin-bottom: 20px;
+  margin-right: 0px;
 }
 
-/* Parágrafo da seção About */
 .about-text p {
-  font-size: 18px; /* Aumentado um pouco */
-  color: #444;
-  line-height: 1.6;
-}
-
-/* Seção Projects */
-.projects-container {
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.projects-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem; /* Aumentei o espaço entre os vídeos */
-  justify-content: center;
-  padding: 40px 20px;
-}
-
-.projects-section video {
-  width: 100%;
-  max-width: 400px; /* Aumentado para dar mais destaque ao vídeo */
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.projects-container h1 {
-  font-size: 36px;
-  color: #6a0dad;
-  margin-bottom: 30px;
-}
-
-.projects-warning {
-  font-size: 18px;
-  color: #ffcc00;
-  margin-bottom: 25px;
-}
-
-.projects-scroll {
-  display: flex;
-  gap: 25px;
-  overflow-x: auto;
-  padding-bottom: 15px;
-  scroll-behavior: smooth;
-}
-
-.project-card {
-  flex: 0 0 auto;
-  width: 340px;
-  background: #222;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.project-info h2 {
-  font-size: 22px;
-  color: #6a0dad;
-}
-
-.project-info p {
-  font-size: 16px;
   color: #d6d0d0;
+  margin-right: 0px;
 }
 
-.project-info a {
-  color: #ffcc00;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
+/* Zig-Zag Effect */
+.left {
+  flex-direction: row; /* Foto à esquerda, texto à direita */
+}
+/* Estilo específico para o vídeo da esquerda */
+.left .about-video {
+  margin-left: -120px; /* Mantém o vídeo encostado na lateral esquerda */
 }
 
-.project-info a:hover {
-  text-decoration: underline;
+/* Estilo específico para o vídeo da direita */
+.right .about-video {
+  margin-left: 0; /* Remove qualquer margem negativa que esteja empurrando o vídeo */
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 1024px) {
-  .projects-section {
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-section {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
 
-  .projects-section video {
-    max-width: 90%;
-    margin-bottom: 1rem;
-  }
-
-  .project-card {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .projects-container h1 {
-    font-size: 28px;
-  }
-
-  .projects-scroll {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .project-card {
+  .about-photo, 
+  .about-video,
+  .about-text {
     width: 100%;
+    margin: 0; /* Remove margens que podem atrapalhar no mobile */
   }
 }
