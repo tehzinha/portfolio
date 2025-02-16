@@ -52,174 +52,107 @@
   background-color: #510985;
 }
 
-/* Responsividade para celulares e tablets */
+/* Seção Projects */
+.projects-container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Aumentei o espaço entre os vídeos */
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.projects-section video {
+  width: 100%;
+  max-width: 400px; /* Aumentado para dar mais destaque ao vídeo */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.projects-container h1 {
+  font-size: 36px;
+  color: #6a0dad;
+  margin-bottom: 30px;
+}
+
+.projects-warning {
+  font-size: 18px;
+  color: #ffcc00;
+  margin-bottom: 25px;
+}
+
+.projects-scroll {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+  scroll-behavior: smooth;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  width: 340px;
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.project-info h2 {
+  font-size: 22px;
+  color: #6a0dad;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #d6d0d0;
+}
+
+.project-info a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
 @media (max-width: 1024px) {
-  .header, .footer, .about-container, .projects-container, .contact-container {
-    padding: 1rem; /* Reduz o padding para ajustar melhor em telas menores */
+  .projects-section {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .navbar {
-    flex-direction: column; /* Links em coluna em telas menores */
-    gap: 1rem; /* Aumenta o espaçamento entre os links */
-    text-align: center; /* Centraliza os links */
-  }
-
-  .logo img {
-    height: 150px; /* Ajusta a logo para tamanhos menores */
-  }
-
-  .cta-button .button {
-    padding: 0.8rem 1.2rem; /* Ajuste no tamanho do botão */
-    font-size: 14px; /* Ajuste no tamanho da fonte */
-  }
-
-  .social-links {
-    flex-direction: column; /* Links sociais em coluna */
-    gap: 10px;
-  }
-
-  .footer-nav {
-    flex-direction: column; /* Itens de navegação no footer em coluna */
-    gap: 10px;
-  }
-
-  .about-photo, .about-text {
-    width: 100%; /* Garante que os itens ocuparam 100% da largura */
+  .projects-section video {
+    max-width: 90%;
+    margin-bottom: 1rem;
   }
 
   .project-card {
-    width: 90%; /* Ajusta os cards para maior aproveitamento de espaço */
-  }
-
-  .video-container {
-    width: 100%;
-  }
-
-  /* Ajuste nas imagens e vídeos */
-  .about-video {
-    width: 100%;
-    max-width: 500px; /* Limita o tamanho máximo da imagem/vídeo */
-    height: auto;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 14px; /* Ajuste no tamanho da fonte */
-    padding: 10px;
-  }
-
-  /* Ajuste na exibição de vídeos em containers */
-  .project-video {
-    width: 100%; /* Garante que o vídeo ocupe toda a largura disponível */
-  }
-
-  .project-card {
-    width: 100%; /* Ajusta a largura dos cards para dispositivos menores */
+    width: 90%;
   }
 }
 
-/* Responsividade para celulares menores (max-width: 480px) */
 @media (max-width: 480px) {
-  .header {
-    flex-direction: column; /* Alinha os itens na vertical */
-    padding: 0.5rem 1rem; /* Reduz o padding */
-  }
-
-  .logo img {
-    height: 120px; /* Ajuste ainda maior para a logo */
-  }
-
-  .navbar {
-    gap: 0.8rem; /* Reduz o espaçamento entre os links */
-  }
-
-  .cta-button a {
-    padding: 8px 12px;
-    font-size: 12px; /* Ajuste no tamanho do botão */
-  }
-
-  .project-card {
-    width: 100%; /* Ajusta o card para ocupar toda a largura */
-  }
-
-  .footer-nav {
-    gap: 8px;
-  }
-
-  .contact-container {
-    width: 100%; /* Garante que o formulário ocupe toda a largura */
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 14px; /* Ajuste na fonte */
-    padding: 10px;
-  }
-
-  .footer-container {
-    padding: 0 10px;
-  }
-
-  /* Ajustes de vídeos e fotos */
-  .about-photo {
-    width: 80%;
-  }
-
-  .about-text h1 {
-    font-size: 24px; /* Reduz o título em telas pequenas */
-  }
-
-  .about-text p {
-    font-size: 14px; /* Reduz o parágrafo */
-  }
-
   .projects-container h1 {
-    font-size: 28px; /* Reduz o tamanho do título de projetos */
+    font-size: 28px;
   }
 
   .projects-scroll {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
   }
-}
 
-/* Responsividade para dispositivos extra pequenos */
-@media (max-width: 360px) {
-  .logo img {
-    height: 80px; /* Reduz logo em telas menores */
-  }
-
-  .cta-button .button {
-    padding: 0.5rem 1rem;
-    font-size: 12px; /* Ajuste no botão */
-  }
-
-  .social-links a {
-    font-size: 14px; /* Reduz tamanho do ícone */
-  }
-
-  .footer-container, .contact-container {
-    padding: 0 10px;
-  }
-
-  .contact-form input, .contact-form textarea {
-    font-size: 12px;
-    padding: 8px;
+  .project-card {
+    width: 100%;
   }
 }
-/* Em dispositivos menores, o menu vira um bloco */
-@media (max-width: 768px) {
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-  }
-}
-
-

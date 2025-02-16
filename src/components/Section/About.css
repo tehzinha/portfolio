@@ -33,49 +33,107 @@
   line-height: 1.6;
 }
 
-/* Responsividade para dispositivos menores */
-@media (max-width: 768px) {
-  .about-container {
+/* Seção Projects */
+.projects-container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Aumentei o espaço entre os vídeos */
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.projects-section video {
+  width: 100%;
+  max-width: 400px; /* Aumentado para dar mais destaque ao vídeo */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.projects-container h1 {
+  font-size: 36px;
+  color: #6a0dad;
+  margin-bottom: 30px;
+}
+
+.projects-warning {
+  font-size: 18px;
+  color: #ffcc00;
+  margin-bottom: 25px;
+}
+
+.projects-scroll {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+  scroll-behavior: smooth;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  width: 340px;
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.project-info h2 {
+  font-size: 22px;
+  color: #6a0dad;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #d6d0d0;
+}
+
+.project-info a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+  .projects-section {
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
   }
 
-  .about-photo {
-    width: 80%;
-    margin-bottom: 20px;
+  .projects-section video {
+    max-width: 90%;
+    margin-bottom: 1rem;
   }
 
-  .about-text {
-    width: 80%;
-    text-align: center;
-  }
-
-  .about-text h1 {
-    font-size: 28px;
-  }
-
-  .about-text p {
-    font-size: 16px;
+  .project-card {
+    width: 90%;
   }
 }
 
-/* Responsividade para dispositivos menores que 480px */
 @media (max-width: 480px) {
-  .about-container {
-    padding: 20px;
+  .projects-container h1 {
+    font-size: 28px;
   }
 
-  .about-photo {
+  .projects-scroll {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-card {
     width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .about-text h1 {
-    font-size: 24px;
-  }
-
-  .about-text p {
-    font-size: 14px;
   }
 }
