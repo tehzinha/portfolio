@@ -27,9 +27,10 @@ function Header() {
       </nav>
       
       <div className="cta-button">
-      <a href="/pdf/cv.pdf" download className="button">
-          Baixar CV
-        </a>
+      <a href={pdfUrl} download>
+  Baixar PDF
+</a>
+
       </div>
     </header>
   );
