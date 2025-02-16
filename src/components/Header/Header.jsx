@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/imagens/logo.png'; // Substitua com o caminho correto da sua logo
 
 function Header() {
+  const pdfUrl = `${window.location.origin}/portfolio/pdf/cv.pdf`;
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
