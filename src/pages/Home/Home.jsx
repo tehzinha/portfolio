@@ -1,5 +1,5 @@
 import React from 'react';
-import BemVindo from '../../assets/videos/bemVindo.mp4';
+//import BemVindo from '../../assets/videos/bemVindo.mp4';
 import './Home.css'; 
 import About from '../../components/Section/About';
 import Projects from '../../components/Section/Projects';
