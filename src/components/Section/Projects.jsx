@@ -8,21 +8,21 @@ import Game2 from "../../assets/videos/Game2.mp4";
 const projectsData = [
   {
     id: 1,
-    video: Game1,
+    video: `${process.env.PUBLIC_URL}/videos/Game1.mp4`,
     title: "Os lendários-Adventure",
     description: "Um jogo de aventura e multiplayer, onde os heróis que uma vez já eram adorados por todos, foram esquecidos pela nova geração. Mas um novo perigo se aproxima e eles sentem que é hora de voltar! Precisam derrotar os inimigos e passar por níveis difíceis. Foi utilizado as linguagens CSS, HTML e JavaScript. Além disso, a cutscene e narração foram feitas por mim, utilizando plataformas digitais.",
     github: "https://github.com/tehzinha/jogoPrincipal",
   },
   {
     id: 2,
-    video: Romance,
+    video: `${process.env.PUBLIC_URL}/videos/Romance.mp4`,
     title: "Jogo de história-Drama",
     description: "Típico jogo de escolhas romântico. Utilizei CSS, HTML e JavaScript.",
     github: "https://github.com/tehzinha/jogoInteracao",
   },
   {
     id: 3,
-    video: Game2,
+    video: `${process.env.PUBLIC_URL}/videos/Game2.mp4`,
     title: "Monkey Game-Adventure",
     description: "Um jogo de aventura, níveis e coleta. Para avançar o macaco precisa coletar as bananas e passar por obstáculos. Utilizei CSS, HTML e JavaScript.",
     github: "https://github.com/tehzinha/jogoMacaco",

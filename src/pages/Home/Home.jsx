@@ -11,7 +11,7 @@ function Home() {
       {/* Vídeo de Boas-vindas */}
       <div className="video-container">
         <video
-          src={BemVindo}
+          src={`${process.env.PUBLIC_URL}/videos/bemVindo.mp4`}
           autoPlay
           loop
           muted

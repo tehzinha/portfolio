@@ -1,9 +1,8 @@
 import React from 'react';
 import './About.css'; // Arquivo de estilos
-import QuemEuSou from '../../assets/videos/QuemEuSou.mp4'; // Vídeo de apresentação
-import FotoPrincipal from '../../assets/imagens/eu.jpeg'; // Foto para outras seções
-import Formatura from '../../assets/videos/Formatura.mp4';
-import Hobbie from '../../assets/videos/Hobbie.mp4';
+//import QuemEuSou from '/videos/QuemEuSou.mp4'; // Vídeo de apresentação
+//import Formatura from '/videos/Formatura.mp4';
+//import Hobbie from '/videos/Hobbie.mp4';
 
 const About = () => {
   return (
@@ -12,7 +11,7 @@ const About = () => {
         {/* Bloco 1 - Vídeo Esquerda, Texto Direita */}
         <div className="about-section left">
           <video 
-            src={QuemEuSou} 
+            src={`${process.env.PUBLIC_URL}/videos/QuemEuSou.mp4`}
             autoPlay 
             loop 
             muted 
@@ -40,7 +39,7 @@ const About = () => {
             </p>
           </div>
           <video 
-            src={Formatura} 
+            src={`${process.env.PUBLIC_URL}/videos/Formatura.mp4`}
             autoPlay 
             loop 
             muted 
@@ -52,7 +51,7 @@ const About = () => {
         {/* Bloco 3 - Foto Esquerda, Texto Direita */}
         <div className="about-section left">
           <video 
-            src={Hobbie} 
+            src={`${process.env.PUBLIC_URL}/videos/Hobbie.mp4`} 
             autoPlay 
             loop 
             muted 
