@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
 import "./Projects.css";
 import { FaPlay } from "react-icons/fa";
-import Game1 from "../../assets/videos/Game1.mp4";
-import Romance from "../../assets/videos/Romance.mp4";
-import Game2 from "../../assets/videos/Game2.mp4";
+//import Game1 from "../../assets/videos/Game1.mp4";
+//import Romance from "../../assets/videos/Romance.mp4";
+//import Game2 from "../../assets/videos/Game2.mp4";
 
 const projectsData = [
   {
