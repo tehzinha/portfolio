@@ -1,10 +1,9 @@
 /* Estilos para o container da seção About */
 .about-container {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 80px 100px;
-  background-color: #f8f8f8;
+  background-color: #464545;
 }
 
 /* Estilo da imagem na seção About */
