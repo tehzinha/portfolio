@@ -52,33 +52,52 @@
   background-color: #510985;
 }
 
-/* Responsividade */
+/* Responsividade para tablets e celulares grandes */
 @media (max-width: 768px) {
   .header {
-    padding: 0.5rem 1rem; /* Menor padding em telas menores */
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Ajuste no padding */
   }
 
   .navbar {
     flex-direction: column;  /* Coloca os links em coluna */
-    gap: 1rem;  /* Menor espaçamento entre os links */
+    gap: 1rem;  /* Espaçamento entre os links */
     text-align: center;
   }
 
-  .logo img {
-    height: 180px;  /* Aumentando a altura da logo em telas menores */
+  .navbar ul {
+    flex-direction: column;
+    padding: 0;
   }
 
-  .cta-button .button {
-    padding: 0.6rem 1.2rem; /* Ajuste no tamanho do botão */
+  .logo img {
+    height: 120px; /* Ajuste na altura da logo */
+  }
+
+  .cta-button a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .project-card,
+  .video-container {
+    width: 100%;
   }
 }
 
+/* Responsividade para celulares pequenos */
 @media (max-width: 480px) {
   .navbar {
-    gap: 0.8rem;  /* Menor espaçamento em telas muito pequenas */
+    gap: 0.8rem;  /* Menor espaçamento */
   }
 
   .logo img {
-    height: 150px;  /* Aumentando a logo ainda mais em telas pequenas */
+    height: 100px;  /* Reduzindo a logo */
+  }
+
+  .cta-button a {
+    font-size: 12px;
+    padding: 8px 12px;
   }
 }
