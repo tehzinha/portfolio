@@ -165,34 +165,5 @@ section {
     width: 100%;
   }
 }
-@media (max-width: 480px) {
-  .header {
-      flex-direction: column;
-      align-items: center; /* Centraliza os itens no header */
-      padding: 0.8rem 1rem; /* Ajuste no espaçamento */
-      text-align: center; /* Centraliza o texto */
-  }
-
-  .logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%; /* Garante que a logo ocupe a largura disponível */
-  }
-
-  .logo img {
-      height: 100px; /* Ajuste no tamanho da logo */
-  }
-
-  .navbar {
-      display: flex;
-      flex-direction: column; /* Coloca os links um abaixo do outro */
-      align-items: center; /* Centraliza os links */
-      gap: 0.8rem; /* Espaçamento entre os links */
-  }
-
-  .navbar a {
-      font-size: 16px; /* Ajuste no tamanho da fonte */
-  }
-}
+ 
 
