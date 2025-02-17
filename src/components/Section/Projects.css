@@ -204,4 +204,42 @@
     padding: 8px;
   }
 }
+@media (max-width: 768px) {
+  .header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem;
+  }
+
+  .logo img {
+      height: 45px; /* Ajuste proporcional */
+  }
+
+  .navbar {
+      display: none; /* Oculta os links */
+      flex-direction: column;
+      background: #222;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      width: 200px;
+      padding: 10px;
+      border-radius: 8px;
+  }
+
+  .navbar a {
+      padding: 10px;
+      display: block;
+      text-align: center;
+  }
+
+  .menu-toggle {
+      display: block; /* Exibe o ícone do menu */
+  }
+
+  /* Exibir menu ao clicar */
+  .navbar.active {
+      display: flex;
+  }
+}
 
