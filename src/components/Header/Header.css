@@ -52,33 +52,42 @@
   background-color: #510985;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
   .header {
-    padding: 0.5rem 1rem; /* Menor padding em telas menores */
-  }
-
-  .navbar {
-    flex-direction: column;  /* Coloca os links em coluna */
-    gap: 1rem;  /* Menor espaçamento entre os links */
-    text-align: center;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem;
   }
 
   .logo img {
-    height: 180px;  /* Aumentando a altura da logo em telas menores */
+      height: 45px; /* Ajuste proporcional */
   }
 
-  .cta-button .button {
-    padding: 0.6rem 1.2rem; /* Ajuste no tamanho do botão */
-  }
-}
-
-@media (max-width: 480px) {
   .navbar {
-    gap: 0.8rem;  /* Menor espaçamento em telas muito pequenas */
+      display: none; /* Oculta os links */
+      flex-direction: column;
+      background: #222;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      width: 200px;
+      padding: 10px;
+      border-radius: 8px;
   }
 
-  .logo img {
-    height: 150px;  /* Aumentando a logo ainda mais em telas pequenas */
+  .navbar a {
+      padding: 10px;
+      display: block;
+      text-align: center;
+  }
+
+  .menu-toggle {
+      display: block; /* Exibe o ícone do menu */
+  }
+
+  /* Exibir menu ao clicar */
+  .navbar.active {
+      display: flex;
   }
 }
