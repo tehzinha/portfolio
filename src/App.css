@@ -135,12 +135,12 @@ section {
 }
 /* Ícone do menu hamburguer */
 .menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
   background: none;
   border: none;
   color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
 }
 
 /* Responsividade: Menu para telas menores */

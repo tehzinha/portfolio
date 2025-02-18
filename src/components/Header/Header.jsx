@@ -15,6 +15,9 @@ function Header() {
   };
   return (
     <header className="header">
+      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </button>
       <div className="logo">
       <a href="#" onClick={scrollToTop}>
           <img src={Logo} alt="Logo do Meu Portfólio" />
@@ -26,9 +29,6 @@ function Header() {
         <a href="#projects">Projetos</a>
         <a href="#contact">Contato</a>
       </nav>
-      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-        ☰
-      </button>
       
       <div className="cta-button">
       <a href={pdfUrl} download>
