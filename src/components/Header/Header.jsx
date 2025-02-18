@@ -26,6 +26,9 @@ function Header() {
           <li><a href="#contact" className="nav-item">Contato</a></li>
         </ul>
       </nav>
+      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </button>
       
       <div className="cta-button">
       <a href={pdfUrl} download>
