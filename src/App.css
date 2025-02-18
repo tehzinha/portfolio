@@ -240,5 +240,55 @@ section {
     max-height: 50vh;
   }
 }
+@media (max-width: 768px) {
+  /* Ajuste na seção #about */
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os elementos */
+    width: 100%;
+  }
+
+  .about-content video {
+    width: 90%; /* Reduz o tamanho do vídeo */
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .about-content p {
+    width: 90%;
+    font-size: 1rem;
+    color: #d6d0d0;
+  }
+}
+
+@media (max-width: 480px) {
+  #about h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-content video {
+    max-width: 350px;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+}
+
  
 
