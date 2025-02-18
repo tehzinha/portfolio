@@ -242,63 +242,51 @@ section {
 }
 /* Responsividade para telas menores (max-width: 768px) */
 @media (max-width: 768px) {
-  /* Garantir que a seção #about se organize verticalmente em telas pequenas */
-  #about {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    padding: 1rem !important; /* Adiciona padding para melhor visualização */
-  }
-
-  #about h1 {
-    font-size: 2rem !important; /* Reduz o tamanho do título */
-    margin-bottom: 20px !important;
-  }
-
   .about-container {
-    display: flex !important;
-    flex-direction: column !important; /* Empilha o conteúdo verticalmente */
-    align-items: center !important;
-    gap: 20px !important;
-    width: 100% !important; /* Ocupa toda a largura da tela */
-    padding: 0 20px !important; /* Adiciona padding */
+    flex-direction: column; /* Empilha o conteúdo */
+    padding: 0 15px; /* Ajusta o padding */
+  }
+
+  .about-section {
+    flex-direction: column; /* Empilha foto e texto verticalmente */
+    align-items: center;
+    gap: 20px;
   }
 
   .about-video {
-    width: 100% !important;
-    max-width: 90% !important; /* Ajusta o tamanho do vídeo */
-    height: auto !important;
-    margin-left: 0 !important; /* Remove qualquer margem negativa */
-  }
-
-  .about-text {
-    width: 100% !important; /* O texto ocupa toda a largura da tela */
-    font-size: 1rem !important;
-    color: #d6d0d0 !important; /* Ajuste de cor */
+    max-width: 100%;
+    width: 90%; /* Faz o vídeo ocupar mais espaço */
   }
 
   .about-photo {
-    width: 80% !important; /* Reduz a largura da foto */
-    margin-left: 0 !important; /* Centraliza a imagem */
+    width: 80%; /* Foto ocupa mais espaço em telas pequenas */
+  }
+
+  .about-text {
+    width: 90%; /* Ajusta o tamanho do texto */
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
   }
 }
 
 /* Para telas muito pequenas (max-width: 480px) */
 @media (max-width: 480px) {
-  #about h1 {
-    font-size: 1.8rem !important; /* Ajusta o título */
+  .about-text h1 {
+    font-size: 1.6rem;
   }
 
   .about-video {
-    max-width: 100% !important; /* Faz o vídeo ocupar toda a largura disponível */
-  }
-
-  .about-text p {
-    font-size: 0.95rem !important; /* Ajusta o texto */
+    max-width: 100%;
+    width: 100%;
   }
 
   .about-photo {
-    width: 70% !important; /* Diminui mais a largura da foto para telas pequenas */
+    width: 100%; /* Foto ocupa toda a largura da tela */
   }
 }
