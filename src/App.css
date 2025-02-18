@@ -240,55 +240,70 @@ section {
     max-height: 50vh;
   }
 }
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
   /* Ajuste na seção #about */
   #about {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Empilhar os elementos */
     align-items: center;
     text-align: center;
   }
 
   #about h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Reduz o tamanho do título */
     margin-bottom: 20px;
   }
 
   .about-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Empilhar o conteúdo verticalmente */
     align-items: center;
     gap: 20px; /* Espaçamento entre os elementos */
+    width: 100%; /* Garantir que ocupe toda a largura */
+    padding: 0 20px; /* Adicionar algum padding para telas pequenas */
+  }
+
+  /* Ajuste para o vídeo */
+  .about-video {
     width: 100%;
-  }
-
-  .about-container video {
-    width: 90%; /* Reduz o tamanho do vídeo */
-    max-width: 400px;
+    max-width: 90%; /* Ajusta o tamanho do vídeo */
     height: auto;
-    border-radius: 10px;
+    margin-left: 0; /* Remover qualquer margem negativa */
   }
 
-  .about-container p {
-    width: 90%;
+  /* Ajuste para o texto */
+  .about-text {
+    width: 100%; /* O texto ocupa toda a largura da tela */
     font-size: 1rem;
-    color: #d6d0d0;
+  }
+
+  /* Foto */
+  .about-photo {
+    width: 80%; /* Reduzir a largura da imagem */
+    margin-left: 0; /* Centralizar a imagem */
   }
 }
 
+/* Ajustes para telas menores de 480px */
 @media (max-width: 480px) {
   #about h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Ajusta o título para telas muito pequenas */
   }
 
-  .about-container video {
-    max-width: 350px;
+  .about-video {
+    max-width: 100%; /* Faz o vídeo ocupar toda a largura disponível */
   }
 
-  .about-container p {
-    font-size: 0.95rem;
+  .about-text p {
+    font-size: 0.95rem; /* Ajusta o tamanho do texto */
+  }
+
+  .about-photo {
+    width: 70%; /* Diminui mais a largura da foto para telas pequenas */
   }
 }
+
 
  
 
