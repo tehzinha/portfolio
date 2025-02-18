@@ -59,26 +59,27 @@
 }
 
 
-/* Responsividade para telas menores */
+/* Responsividade para telas menores 
 @media (max-width: 768px) {
   .about-container {
       display: flex;
-      flex-direction: column; /* Empilhar texto e vídeos */
-      align-items: center; /* Centralizar conteúdo */
+      flex-direction: column; /* Empilhar texto e vídeos 
+      align-items: center; /* Centralizar conteúdo 
       padding: 1rem;
       text-align: center;
   }
 
   .about-text {
-      max-width: 90%; /* Evita que o texto fique muito largo */
-      font-size: 16px; /* Ajusta o tamanho do texto */
-      line-height: 1.6; /* Melhor espaçamento entre linhas */
+      max-width: 90%; /* Evita que o texto fique muito largo 
+      font-size: 16px; /* Ajusta o tamanho do texto 
+      line-height: 1.6; /* Melhor espaçamento entre linhas 
   }
 
   .about-video {
-      width: 90%; /* Aumenta o tamanho dos vídeos */
-      max-width: 500px; /* Define um limite para não exagerar */
-      height: auto; /* Mantém a proporção correta */
-      margin: 1rem 0; /* Adiciona espaçamento entre os vídeos */
+      width: 90%; /* Aumenta o tamanho dos vídeos 
+      max-width: 500px; /* Define um limite para não exagerar 
+      height: auto; /* Mantém a proporção correta 
+      margin: 1rem 0; /* Adiciona espaçamento entre os vídeos 
   }
 }
+*/
