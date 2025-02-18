@@ -147,6 +147,7 @@ section {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block; /* Exibe o botão ☰ */
+    margin-left: 20px;
   }
 
   .navbar {
@@ -216,6 +217,27 @@ section {
 
   .project-card {
     width: 100%;
+  }
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .video-container {
+    height: 60vh; /* Reduz a altura do vídeo em telas pequenas */
+  }
+
+  .video-container video {
+    height: auto; /* Mantém a proporção */
+    max-height: 60vh; /* Impede que o vídeo ultrapasse a tela */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    height: 50vh; /* Ainda menor para telas muito pequenas */
+  }
+
+  .video-container video {
+    max-height: 50vh;
   }
 }
  

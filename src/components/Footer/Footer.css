@@ -150,6 +150,7 @@
   .cta-button a {
     padding: 8px 12px;
     font-size: 12px; /* Ajuste no tamanho do botão */
+    margin-right: 40px;
   }
 
   .project-card {
