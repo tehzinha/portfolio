@@ -1,9 +1,11 @@
 import React from 'react';
+import { useState } from "react";
 import './Header.css';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/imagens/logo.png'; // Substitua com o caminho correto da sua logo
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const pdfUrl = `${window.location.origin}/portfolio/pdf/cv.pdf`;
   const scrollToTop = () => {
     window.scrollTo({
@@ -19,12 +21,10 @@ function Header() {
         </a>
       </div>
       
-      <nav className="navbar">
-        <ul className="nav-links">
-          <li><a href="#about" className="nav-item">Sobre</a></li>
-          <li><a href="#projects" className="nav-item">Projetos</a></li>
-          <li><a href="#contact" className="nav-item">Contato</a></li>
-        </ul>
+      <nav className={`navbar ${menuOpen ? "active" : ""}`}>
+        <a href="#about">Sobre</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
       </nav>
       <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
