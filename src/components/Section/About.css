@@ -59,66 +59,65 @@
 }
 
 
-/* Responsividade para telas menores */
+/* Responsividade para telas menores (max-width: 768px) */
 @media (max-width: 768px) {
-  /* Ajuste na seção #about */
+  /* Garantir que a seção #about se organize verticalmente em telas pequenas */
   #about {
-    display: flex;
-    flex-direction: column; /* Empilhar os elementos */
-    align-items: center;
-    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 1rem !important; /* Adiciona padding para melhor visualização */
   }
 
   #about h1 {
-    font-size: 2rem; /* Reduz o tamanho do título */
-    margin-bottom: 20px;
+    font-size: 2rem !important; /* Reduz o tamanho do título */
+    margin-bottom: 20px !important;
   }
 
   .about-container {
-    display: flex;
-    flex-direction: column; /* Empilhar o conteúdo verticalmente */
-    align-items: center;
-    gap: 20px; /* Espaçamento entre os elementos */
-    width: 100%; /* Garantir que ocupe toda a largura */
-    padding: 0 20px; /* Adicionar algum padding para telas pequenas */
+    display: flex !important;
+    flex-direction: column !important; /* Empilha o conteúdo verticalmente */
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important; /* Ocupa toda a largura da tela */
+    padding: 0 20px !important; /* Adiciona padding */
   }
 
-  /* Ajuste para o vídeo */
   .about-video {
-    width: 100%;
-    max-width: 90%; /* Ajusta o tamanho do vídeo */
-    height: auto;
-    margin-left: 0; /* Remover qualquer margem negativa */
+    width: 100% !important;
+    max-width: 90% !important; /* Ajusta o tamanho do vídeo */
+    height: auto !important;
+    margin-left: 0 !important; /* Remove qualquer margem negativa */
   }
 
-  /* Ajuste para o texto */
   .about-text {
-    width: 100%; /* O texto ocupa toda a largura da tela */
-    font-size: 1rem;
+    width: 100% !important; /* O texto ocupa toda a largura da tela */
+    font-size: 1rem !important;
+    color: #d6d0d0 !important; /* Ajuste de cor */
   }
 
-  /* Foto */
   .about-photo {
-    width: 80%; /* Reduzir a largura da imagem */
-    margin-left: 0; /* Centralizar a imagem */
+    width: 80% !important; /* Reduz a largura da foto */
+    margin-left: 0 !important; /* Centraliza a imagem */
   }
 }
 
-/* Ajustes para telas menores de 480px */
+/* Para telas muito pequenas (max-width: 480px) */
 @media (max-width: 480px) {
   #about h1 {
-    font-size: 1.8rem; /* Ajusta o título para telas muito pequenas */
+    font-size: 1.8rem !important; /* Ajusta o título */
   }
 
   .about-video {
-    max-width: 100%; /* Faz o vídeo ocupar toda a largura disponível */
+    max-width: 100% !important; /* Faz o vídeo ocupar toda a largura disponível */
   }
 
   .about-text p {
-    font-size: 0.95rem; /* Ajusta o tamanho do texto */
+    font-size: 0.95rem !important; /* Ajusta o texto */
   }
 
   .about-photo {
-    width: 70%; /* Diminui mais a largura da foto para telas pequenas */
+    width: 70% !important; /* Diminui mais a largura da foto para telas pequenas */
   }
 }
