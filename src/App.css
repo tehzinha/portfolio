@@ -141,11 +141,10 @@ section {
   }
 
   .logo img {
-      height: 45px; /* Ajuste proporcional */
+      height: 80px; /* Ajuste proporcional */
   }
 
   .navbar {
-      display: none; /* Oculta os links */
       flex-direction: column;
       background: #222;
       position: absolute;
