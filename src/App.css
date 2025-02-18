@@ -254,7 +254,7 @@ section {
     margin-bottom: 20px;
   }
 
-  .about-content {
+  .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,14 +262,14 @@ section {
     width: 100%;
   }
 
-  .about-content video {
+  .about-container video {
     width: 90%; /* Reduz o tamanho do vídeo */
     max-width: 400px;
     height: auto;
     border-radius: 10px;
   }
 
-  .about-content p {
+  .about-container p {
     width: 90%;
     font-size: 1rem;
     color: #d6d0d0;
@@ -281,11 +281,11 @@ section {
     font-size: 1.8rem;
   }
 
-  .about-content video {
+  .about-container video {
     max-width: 350px;
   }
 
-  .about-content p {
+  .about-container p {
     font-size: 0.95rem;
   }
 }
